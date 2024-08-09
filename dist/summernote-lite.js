@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong and contributors
  * Summernote may be freely distributed under the MIT license.
  *
- * Date: 2021-10-14T21:15Z
+ * Date: 2024-08-09T08:33Z
  *
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -7677,7 +7677,7 @@ var Buttons = /*#__PURE__*/function () {
             $catcher.css({
               width: _this2.options.insertTableMaxSize.col + 'em',
               height: _this2.options.insertTableMaxSize.row + 'em'
-            }).mouseup(_this2.context.createInvokeHandler('editor.insertTable')).on('mousemove', _this2.tableMoveHandler.bind(_this2));
+            }).on('mousedown', _this2.context.createInvokeHandler('editor.insertTable')).on('mousemove', _this2.tableMoveHandler.bind(_this2));
           }
         }).render();
       });
